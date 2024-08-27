@@ -35,8 +35,15 @@ function desencriptar(){
 }
 
 function mostrar_resultado(){
-    let resultado = document.getElementById("resultado_encriptado");
+    let resultado = document.getElementById("resultado");
     let mensaje_inicial = document.getElementById("mensaje_inicial");
-    mensaje_inicial.style.display = "none";
-    resultado.style.display = "block";
+    mensaje_inicial.classList.add("oculto");
+    resultado.classList.remove("oculto");
+}
+
+function copiar_texto(){
+    let texto = document.getElementById("resultado_encriptado").innerHTML;
+    navigator.clipboard.writeText(texto);
+
+    alert("Texto copiado");
 }
