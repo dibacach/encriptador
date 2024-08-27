@@ -44,6 +44,24 @@ html{
     color: var(--color-principal);
 }
 
+.contenedor_ingreso_aviso{
+    color: #65747D;
+}
+
+.contenedor__ingreso__aviso_exclamacion{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    color:white;
+    background-color: #65747D;
+    width: 15px;
+    height: 15px;
+    border: solid #65747D;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
 .contenedor__ingreso__botones{
     display: flex;
     justify-content: space-around;

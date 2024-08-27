@@ -12,7 +12,9 @@
     <main class="contenedor">
         <div class="contenedor__ingreso">
             <textarea id="mensaje" class="contenedor__ingreso__texto" placeholder="Ingrese el texto aqui"></textarea>
-            <p><i class="contenedor__ingreso__exclamacion">!</i> letras minúsculas y sin acentos</p>
+            <p class="contenedor_ingreso_aviso">
+                <div class="contenedor__ingreso__aviso_exclamacion">!</div> Solo letras minúsculas y sin acentos
+            </p>
             <div class="contenedor__ingreso__botones">
                 <button id="btn-encriptar" class="btn_principal" onclick="encriptar()">Encriptar</button>
                 <button id="btn-desencriptar" class="btn_secundario" onclick="desencriptar()">Desencriptar</button>
